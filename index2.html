@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html class="loading">
+<head>
+	<title>Web Concept</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="shortcut icon" href="desk.ico" />
+	<link rel="stylesheet" type="text/css" href="styles2.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body id="home" style="min-width:1200px">
+	
+	<div id="myNav" class="overlay">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<div class="overlay-content">
+    		<a href="index3.html" id="a1">About</a>
+    		<a href="index.html" id="a1">Home</a>
+    		<a href="index2.html" id="a1">Extras</a>
+  		</div>
+	</div>
+	<div id="popo">
+	<span id="button1" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		<div id="texts">
+			<h1 id="head1">Pictures</h1>
+			<p id="para">In photography there is a reality so subtle that it becomes more real than reality.
+Wherever there is light, one can photograph.
+The best images are the ones that retain their strength and impact over the years, regardless of the number of times they are viewed.
+The camera makes you forget you’re there. It’s not like you are hiding but you forget, you are just looking so much.
+You don’t take a photograph, you make it.
+There are always two people in every picture: the photographer and the viewer.
+In photography there are no shadows that cannot be illuminated.
+Photography helps people to see.
+Photographing a culture in the here and now often means photographing the intersection of the present with the past.
+A photograph is a secret about a secret. The more it tells you the less you know.
+</p>
+			<p id="p3"><a href="index3.html" ><i class="fa fa-sort-down bounce" style="font-size:48px;color:black"></i></a></p>
+		</div>
+	</div>
+	<div id="popo2" >
+		<img src="http://cdn.pcwallart.com/images/kingfisher-bird-wallpaper-1.jpg" id="img1">
+		<!--<div id="popo3">
+			<img src="background1.jpg" id="img2">
+			<div id="popo4">
+			<img src="background1.jpg" id="img3">
+			</div>	
+		</div>-->
+
+	</div>
+
+	<script>
+		var html = document.getElementsByTagName('html')[0];
+		var removeLoading = function() {
+			setTimeout(function() {
+				html.className = html.className.replace(/loading/, '');
+			}, 3000);
+		};
+		removeLoading();
+	</script>
+	<script>
+		function openNav() {
+    	document.getElementById("myNav").style.height = "100%";
+		}
+		function closeNav() {
+    	document.getElementById("myNav").style.height = "0%";
+		}
+	</script>
+</body>
+</html>

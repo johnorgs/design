@@ -1,0 +1,143 @@
+html
+{
+	-webkit-transition: background-color 1s;
+	transition: background-color 1s;
+}
+html, body
+{
+	 min-height: 100%;
+}
+html.loading
+{
+  background-image: url('tail-spin.svg');
+	background: #f4511e url('tail-spin.svg') no-repeat 50% 50%;
+	
+	-webkit-transition: background-color 0;
+	transition: background-color 0;
+}
+body
+{
+	-webkit-transition: opacity 1s ease-in;
+	transition: opacity 1s ease-in;
+}
+html.loading body 
+{
+	opacity: 0;
+	-webkit-transition: opacity 0;
+	transition: opacity 0;
+}
+body
+{
+  margin: 0;
+  position: fixed;
+
+  /* Added for sense of scrok=lling */
+}
+
+body {
+  margin: 0;
+  /*background: #FFFFFF; */
+}
+
+
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+#button1
+{
+	float: left;
+	margin-top: 50px;
+	margin-left: 70px;
+	color: white;
+}
+
+#pp{
+  margin-left: 35%;
+  margin-top: 70px;
+  border-style: solid;
+  border-radius: 50%;
+  width: 500px;
+  height:500px;
+  border-color: #FFFFFF;
+}
+#create
+{
+  margin-left: 35%;
+  margin-top: 45%;
+  font-family: font1;
+  color: #FFFFFF;
+  
+}
+@font-face
+{
+  font-family: font1;
+  src:url(montez.ttf);
+}
+@font-face
+{
+  font-family: font2;
+  src:url(leck.ttf);
+}
+a{font-family: font1;}
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+  background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
